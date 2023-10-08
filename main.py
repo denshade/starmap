@@ -38,7 +38,7 @@ def convert_right_inclination_to_degrees(right_inclination):
 
 
 def convert_to_degrees(angle):
-    components = re.findall(r'[0-9]+(?:\.[0-9]+)?', angle)
+    components = re.findall(r'-?\d+(?:\.\d+)?', angle)
 
     degrees = int(components[0])
     minutes = int(components[1])
